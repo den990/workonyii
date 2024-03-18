@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 $passwordHash = Yii::$app->request->get('password');
 $user = User::findOne(['password' => $passwordHash]);
 
-//if ($user !== null) {
+if ($user !== null) {
     ?>
 
     <div class="site-login">
@@ -57,10 +57,10 @@ $user = User::findOne(['password' => $passwordHash]);
         </div>
     </div>
 
-<!--    --><?php
-//} else {
-//    // Если пользователь не найден, выполняем редирект на домашнюю страницу
-//    Yii::$app->response->redirect(Yii::$app->homeUrl)->send();
-//    Yii::$app->end();
-//}
-//?>
+    <?php
+} else {
+    // Если пользователь не найден, выполняем редирект на домашнюю страницу
+    Yii::$app->response->redirect(Yii::$app->homeUrl)->send();
+    Yii::$app->end();
+}
+?>
