@@ -5,7 +5,7 @@
 
 /** @var app\models\LoginForm $model */
 
-/** @var app\models\PasswordReset $modelPasswordReset */
+/** @var app\models\PasswordResetForm $modelPasswordReset */
 
 use app\assets\LoginAsset;
 use yii\bootstrap5\ActiveForm;

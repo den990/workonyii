@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\LoginForm;
+use app\models\PasswordResetForm;
 use app\models\User;
 use Yii;
 use yii\web\Controller;
@@ -25,16 +26,13 @@ class LoginController extends Controller
                 {
                     if ($modelLoginForm->login()) {
                         return $this->goHome();
-                    } else {
-                        Yii::error("Failed to log in user: " . print_r($modelLoginForm->errors, true));
                     }
-                }
-                else{
-                    Yii::error("User not found", true);
                 }
             }
         }
 
-//        return $this->render('@app/views/site/login', ['model' => $modelLoginForm]);
+        $modelPasswordReset = new PasswordResetForm();
+        return $this->render('@app/views/site/login',
+            ['model' => $modelLoginForm, 'modelPasswordReset' => $modelPasswordReset]);
     }
 }

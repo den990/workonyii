@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\PasswordReset;
+use app\models\PasswordResetForm;
 use app\models\RegistrationForm;
 use app\models\User;
 use Yii;
@@ -79,7 +80,7 @@ class SiteController extends Controller
         }
 
         $model = new LoginForm();
-        $modelPasswordReset = new PasswordReset();
+        $modelPasswordReset = new PasswordResetForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
@@ -146,5 +147,13 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionResetPassword()
+    {
+        $model = new PasswordReset();
+        return $this->render('reset-password', [
+            'model' => $model
+        ]);
     }
 }
