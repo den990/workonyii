@@ -32,7 +32,7 @@ $config = [
             'useFileTransport' => false, // Отключаем сохранение в файл
             'transport' => [
 
-                'dsn' => 'smtp://[почта]:[пароль]@smtp.gmail.com:587'
+                'dsn' => 'smtp://koldyrev03@gmail.com:yifvuvhrgelpbyiy@smtp.gmail.com:587'
             ],
         ],
         'log' => [

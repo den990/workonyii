@@ -1,0 +1,792 @@
+webvimark\modules\UserManagement\models\User Object
+(
+    [gridRoleSearch] => 
+    [password] => abc
+    [repeat_password] => 
+    [_attributes:yii\db\BaseActiveRecord:private] => Array
+        (
+            [email] => abc@abc.ru
+            [username] => abc
+            [bind_to_ip] => 
+            [registration_ip] => [::1]
+            [auth_key] => vl-7vxjeE0wdavvyPR9HfajBF2G8FZYV
+            [password_hash] => $2y$13$cMQshmXk2SwZVBiEF5NIauKnjHNFSqX293NtJCDOXaN1kN1e087rm
+            [created_at] => 1719581079
+            [updated_at] => 1719581079
+            [id] => 8
+        )
+
+    [_oldAttributes:yii\db\BaseActiveRecord:private] => Array
+        (
+            [email] => abc@abc.ru
+            [username] => abc
+            [bind_to_ip] => 
+            [registration_ip] => [::1]
+            [auth_key] => vl-7vxjeE0wdavvyPR9HfajBF2G8FZYV
+            [password_hash] => $2y$13$cMQshmXk2SwZVBiEF5NIauKnjHNFSqX293NtJCDOXaN1kN1e087rm
+            [created_at] => 1719581079
+            [updated_at] => 1719581079
+            [id] => 8
+        )
+
+    [_related:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_relationsDependencies:yii\db\BaseActiveRecord:private] => Array
+        (
+        )
+
+    [_errors:yii\base\Model:private] => Array
+        (
+        )
+
+    [_validators:yii\base\Model:private] => ArrayObject Object
+        (
+            [storage:ArrayObject:private] => Array
+                (
+                    [0] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => {attribute} cannot be blank.
+                            [attributes] => Array
+                                (
+                                    [0] => username
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [1] => yii\validators\UniqueValidator Object
+                        (
+                            [targetClass] => 
+                            [targetAttribute] => 
+                            [filter] => 
+                            [message] => {attribute} "{value}" has already been taken.
+                            [comboNotUnique] => 
+                            [targetAttributeJunction] => and
+                            [forceMasterDb] => 1
+                            [attributes] => Array
+                                (
+                                    [0] => username
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [2] => yii\validators\TrimValidator Object
+                        (
+                            [chars] => 
+                            [skipOnArray] => 1
+                            [skipOnEmpty] => 
+                            [attributes] => Array
+                                (
+                                    [0] => username
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [3] => yii\validators\NumberValidator Object
+                        (
+                            [allowArray] => 
+                            [integerOnly] => 1
+                            [max] => 
+                            [min] => 
+                            [tooBig] => 
+                            [tooSmall] => 
+                            [integerPattern] => /^[+-]?\d+$/
+                            [numberPattern] => /^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$/
+                            [attributes] => Array
+                                (
+                                    [0] => status
+                                    [1] => email_confirmed
+                                )
+
+                            [message] => {attribute} must be an integer.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [4] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => {attribute} cannot be blank.
+                            [attributes] => Array
+                                (
+                                    [0] => email
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [5] => yii\validators\EmailValidator Object
+                        (
+                            [pattern] => /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/
+                            [fullPattern] => /^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/
+                            [patternASCII] => /^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*$/
+                            [fullPatternASCII] => /^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*$/
+                            [allowName] => 
+                            [checkDNS] => 
+                            [enableIDN] => 
+                            [enableLocalIDN] => 1
+                            [attributes] => Array
+                                (
+                                    [0] => email
+                                )
+
+                            [message] => {attribute} is not a valid email address.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [6] => yii\validators\InlineValidator Object
+                        (
+                            [method] => Array
+                                (
+                                    [0] => webvimark\modules\UserManagement\models\User Object
+ *RECURSION*
+                                    [1] => validateEmailConfirmedUnique
+                                )
+
+                            [params] => 
+                            [clientValidate] => 
+                            [current] => 
+                            [attributes] => Array
+                                (
+                                    [0] => email
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [7] => yii\validators\InlineValidator Object
+                        (
+                            [method] => Array
+                                (
+                                    [0] => webvimark\modules\UserManagement\models\User Object
+ *RECURSION*
+                                    [1] => validateBindToIp
+                                )
+
+                            [params] => 
+                            [clientValidate] => 
+                            [current] => 
+                            [attributes] => Array
+                                (
+                                    [0] => bind_to_ip
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [8] => yii\validators\TrimValidator Object
+                        (
+                            [chars] => 
+                            [skipOnArray] => 1
+                            [skipOnEmpty] => 
+                            [attributes] => Array
+                                (
+                                    [0] => bind_to_ip
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [9] => yii\validators\StringValidator Object
+                        (
+                            [length] => 
+                            [max] => 255
+                            [min] => 
+                            [message] => {attribute} must be a string.
+                            [tooShort] => 
+                            [tooLong] => {attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.
+                            [notEqual] => 
+                            [encoding] => UTF-8
+                            [strict] => 1
+                            [attributes] => Array
+                                (
+                                    [0] => bind_to_ip
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [10] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => {attribute} cannot be blank.
+                            [attributes] => Array
+                                (
+                                    [0] => password
+                                )
+
+                            [on] => Array
+                                (
+                                    [0] => newUser
+                                    [1] => changePassword
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [11] => yii\validators\StringValidator Object
+                        (
+                            [length] => 
+                            [max] => 255
+                            [min] => 
+                            [message] => {attribute} must be a string.
+                            [tooShort] => 
+                            [tooLong] => {attribute} should contain at most {max, number} {max, plural, one{character} other{characters}}.
+                            [notEqual] => 
+                            [encoding] => UTF-8
+                            [strict] => 1
+                            [attributes] => Array
+                                (
+                                    [0] => password
+                                )
+
+                            [on] => Array
+                                (
+                                    [0] => newUser
+                                    [1] => changePassword
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [12] => yii\validators\TrimValidator Object
+                        (
+                            [chars] => 
+                            [skipOnArray] => 1
+                            [skipOnEmpty] => 
+                            [attributes] => Array
+                                (
+                                    [0] => password
+                                )
+
+                            [message] => 
+                            [on] => Array
+                                (
+                                    [0] => newUser
+                                    [1] => changePassword
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [13] => yii\validators\RegularExpressionValidator Object
+                        (
+                            [pattern] => /^(.*)+$/
+                            [not] => 
+                            [attributes] => Array
+                                (
+                                    [0] => password
+                                )
+
+                            [message] => {attribute} is invalid.
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [14] => yii\validators\RequiredValidator Object
+                        (
+                            [skipOnEmpty] => 
+                            [requiredValue] => 
+                            [strict] => 
+                            [message] => {attribute} cannot be blank.
+                            [attributes] => Array
+                                (
+                                    [0] => repeat_password
+                                )
+
+                            [on] => Array
+                                (
+                                    [0] => newUser
+                                    [1] => changePassword
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                    [15] => yii\validators\CompareValidator Object
+                        (
+                            [compareAttribute] => password
+                            [compareValue] => 
+                            [type] => string
+                            [operator] => ==
+                            [message] => {attribute} must be equal to "{compareValueOrAttribute}".
+                            [attributes] => Array
+                                (
+                                    [0] => repeat_password
+                                )
+
+                            [on] => Array
+                                (
+                                )
+
+                            [except] => Array
+                                (
+                                )
+
+                            [skipOnError] => 1
+                            [skipOnEmpty] => 1
+                            [enableClientValidation] => 1
+                            [isEmpty] => 
+                            [when] => 
+                            [whenClient] => 
+                            [_events:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_eventWildcards:yii\base\Component:private] => Array
+                                (
+                                )
+
+                            [_behaviors:yii\base\Component:private] => 
+                        )
+
+                )
+
+        )
+
+    [_scenario:yii\base\Model:private] => default
+    [_events:yii\base\Component:private] => Array
+        (
+            [beforeInsert] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => yii\behaviors\TimestampBehavior Object
+                                        (
+                                            [createdAtAttribute] => created_at
+                                            [updatedAtAttribute] => updated_at
+                                            [value] => 
+                                            [attributes] => Array
+                                                (
+                                                    [beforeInsert] => Array
+                                                        (
+                                                            [0] => created_at
+                                                            [1] => updated_at
+                                                        )
+
+                                                    [beforeUpdate] => updated_at
+                                                )
+
+                                            [skipUpdateOnClean] => 1
+                                            [preserveNonEmptyValues] => 
+                                            [owner] => webvimark\modules\UserManagement\models\User Object
+ *RECURSION*
+                                            [_attachedEvents:yii\base\Behavior:private] => Array
+                                                (
+                                                    [beforeInsert] => evaluateAttributes
+                                                    [beforeUpdate] => evaluateAttributes
+                                                )
+
+                                        )
+
+                                    [1] => evaluateAttributes
+                                )
+
+                            [1] => 
+                        )
+
+                )
+
+            [beforeUpdate] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => yii\behaviors\TimestampBehavior Object
+                                        (
+                                            [createdAtAttribute] => created_at
+                                            [updatedAtAttribute] => updated_at
+                                            [value] => 
+                                            [attributes] => Array
+                                                (
+                                                    [beforeInsert] => Array
+                                                        (
+                                                            [0] => created_at
+                                                            [1] => updated_at
+                                                        )
+
+                                                    [beforeUpdate] => updated_at
+                                                )
+
+                                            [skipUpdateOnClean] => 1
+                                            [preserveNonEmptyValues] => 
+                                            [owner] => webvimark\modules\UserManagement\models\User Object
+ *RECURSION*
+                                            [_attachedEvents:yii\base\Behavior:private] => Array
+                                                (
+                                                    [beforeInsert] => evaluateAttributes
+                                                    [beforeUpdate] => evaluateAttributes
+                                                )
+
+                                        )
+
+                                    [1] => evaluateAttributes
+                                )
+
+                            [1] => 
+                        )
+
+                )
+
+        )
+
+    [_eventWildcards:yii\base\Component:private] => Array
+        (
+        )
+
+    [_behaviors:yii\base\Component:private] => Array
+        (
+            [0] => yii\behaviors\TimestampBehavior Object
+                (
+                    [createdAtAttribute] => created_at
+                    [updatedAtAttribute] => updated_at
+                    [value] => 
+                    [attributes] => Array
+                        (
+                            [beforeInsert] => Array
+                                (
+                                    [0] => created_at
+                                    [1] => updated_at
+                                )
+
+                            [beforeUpdate] => updated_at
+                        )
+
+                    [skipUpdateOnClean] => 1
+                    [preserveNonEmptyValues] => 
+                    [owner] => webvimark\modules\UserManagement\models\User Object
+ *RECURSION*
+                    [_attachedEvents:yii\base\Behavior:private] => Array
+                        (
+                            [beforeInsert] => evaluateAttributes
+                            [beforeUpdate] => evaluateAttributes
+                        )
+
+                )
+
+        )
+
+)
