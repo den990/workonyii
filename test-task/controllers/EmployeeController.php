@@ -14,13 +14,7 @@ class EmployeeController extends ActiveController
     {
         $behaviors = parent::behaviors();
 
-        // Поддержка формата ответа JSON
         $behaviors['contentNegotiator']['formats']['application/json'] = Response::FORMAT_JSON;
-
-        // Добавление аутентификации и авторизации, если необходимо
-        // Пример: $behaviors['authenticator'] = [
-        //    'class' => \yii\filters\auth\HttpBearerAuth::className(),
-        // ];
 
         return $behaviors;
     }
@@ -29,7 +23,6 @@ class EmployeeController extends ActiveController
     {
         $actions = parent::actions();
 
-        // Отключить действия, которые мы будем переопределять
         unset($actions['create'], $actions['update'], $actions['delete']);
 
         return $actions;
