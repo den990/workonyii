@@ -2,7 +2,7 @@
 
 class CurrencyExchange
 {
-    public array $courses = [];
+    private array $courses = [];
 
     public function setExchangeRate(string $from, string $to, float $course): void {
         $this->courses[$from][$to] = $course;
