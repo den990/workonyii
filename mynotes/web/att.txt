@@ -1,0 +1,15 @@
+Array
+(
+    [user_id] => 168576576
+    [id] => 168576576
+    [nickname] => 
+    [bdate] => 21.6.1994
+    [timezone] => 3
+    [photo] => https://sun7-22.userapi.com/s/v1/if1/M1olnTLlUIuH5FwkfbUZ5MS-HCFmbm-J7ArtQw48mKBVnnR9VL5yZJ_gxRhlpTLvExiYgA5U.jpg?quality=96&crop=0,0,2048,2048&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440&ava=1&cs=50x50
+    [sex] => 2
+    [screen_name] => dkoldyrev
+    [first_name] => Даниил
+    [last_name] => Колдырев
+    [can_access_closed] => 1
+    [is_closed] => 
+)
