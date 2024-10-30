@@ -1,0 +1,8 @@
+Array
+(
+    [user_id] => Array
+        (
+            [0] => User Id cannot be blank.
+        )
+
+)
